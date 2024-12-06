@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+</head>
+<body>
+    <h1>EventListner Demo</h1>
+
+    <button id="clickIt">Click here</button> 
+
+  
+    <p id="hoverPara">Hover over this Text !</p> 
+  
+    <b id="effect"></b> 
+ 	 <BR>
+    <input id="elem" type="button" value="Click me"/>
+    
+    
+    <br><br>
+
+    <button id="btn1">Coforge</button> 
+
+    <script>
+
+        const x =document.getElementById("clickIt");
+        const y =document.getElementById("hoverPara");
+
+        x.addEventListener("click",RespondClick);
+        y.addEventListener("mouseover",RespondMouseOver);
+        y.addEventListener("mouseout",RespondMouseOut);
+
+        
+    
+        function RespondMouseOver() { 
+            document.getElementById("effect").innerHTML += 
+                       "MouseOver Event" + "<br>"; 
+        } 
+  
+        function RespondMouseOut() { 
+            document.getElementById("effect").innerHTML += 
+                      "MouseOut Event" + "<br>"; 
+        } 
+  
+        function RespondClick() { 
+            document.getElementById("effect").innerHTML += 
+                      "Click Event" + "<br>"; 
+        } 
+
+        function handler1() {alert('Thanks!');};
+        function handler2() {alert('Thanks Again!');}
+
+        elem.onclick=()=> alert("hello")
+
+        elem.addEventListener("click",handler1);
+        elem.addEventListener("click",handler2);
+
+
+btn1.addEventListener("click",function(){alert("Im in board room ")}); //annoymous function
+btn1.addEventListener("click",hello);
+
+
+function hello(){
+    alert("Hello World From 16th floor ")
+}
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

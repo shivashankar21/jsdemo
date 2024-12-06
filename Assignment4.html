@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello username</title>
+    <script>
+        function showanddisplay(){
+            const name=document.helloform.yourname.value;
+            alert('Hello ' + name);
+ 
+            const resdiv=document.getElementById("result");
+            resdiv.innerHTML=`<h1><b> Hello ${name} </b></h1>`;
+        }
+    </script>
+</head>
+<body>
+    <h3>Collect information from the user and store in a variable for later use.</h3>
+    <form name="helloform">
+        Enter your name :
+        <input type="text" name="yourname">
+        <input type="button" value="Go"
+        onClick=showanddisplay()>
+    </form>  
+    <div id="result" ></div>
+</body>
+</html>

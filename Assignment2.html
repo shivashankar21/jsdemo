@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Backgorund</title>
+    <style>
+        #button{
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 200px;
+  margin-left: 550px;
+  background: #acff47;
+}
+#button:hover{
+    background-color: aqua;
+}
+    </style>
+    <script>
+        function bgcolor(){
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click here" id="button" onclick="bgcolor()">
+</body>
+</html>
